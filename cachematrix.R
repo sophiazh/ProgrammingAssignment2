@@ -31,11 +31,11 @@ makeCacheMatrix <- function(x = matrix()) {
           }
 
 
-          getInverse <- function {invrs} # return invrs
+          getInverse <- function() {invrs} # return invrs
 
           list(set = set, get = get,     # return a list of the four functions
                setInverse = setInverse, 
-               getInverse = setInverse)
+               getInverse = getInverse)
 }
 
 
@@ -63,3 +63,5 @@ cacheSolve <- function(x, ...) {
           
           invrs # return solved inverse
 }
+
+
